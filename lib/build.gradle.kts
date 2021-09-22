@@ -7,8 +7,7 @@
  */
 
 plugins {
-    // Apply the org.jetbrains.kotlin.jvm Plugin to add support for Kotlin.
-    id("org.jetbrains.kotlin.jvm") version "1.4.20"
+    kotlin("jvm") version "1.5.31" apply false
 
     // Apply the java-library plugin for API and implementation separation.
     `java-library`
@@ -17,6 +16,7 @@ plugins {
 repositories {
     // Use JCenter for resolving dependencies.
     jcenter()
+    maven("https://jitpack.io")
 }
 
 dependencies {
@@ -25,6 +25,10 @@ dependencies {
 
     // Use the Kotlin JDK 8 standard library.
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+
+    implementation("io.github.portfoligno:jackson-immutable-ast:1.4.1")
+
+    val jacksonVersion = "2.12.5"
 
     // This dependency is used internally, and not exposed to consumers on their own compile classpath.
     implementation("com.google.guava:guava:29.0-jre")
@@ -35,6 +39,6 @@ dependencies {
     // Use the Kotlin JUnit integration.
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit")
 
-    // This dependency is exported to consumers, that is to say found on their compile classpath.
-    api("org.apache.commons:commons-math3:3.6.1")
+    testImplementation("com.fasterxml.jackson.module:jackson-module-kotlin:$jacksonVersion")
+    testImplementation("com.fasterxml.jackson.core:jackson-databind:$jacksonVersion")
 }
