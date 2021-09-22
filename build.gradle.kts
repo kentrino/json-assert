@@ -6,6 +6,9 @@ plugins {
     kotlin("jvm") version "1.5.31" apply false
 }
 
+group = "dev.kentrino"
+version = "0.0.1"
+
 repositories {
     jcenter()
     maven("https://jitpack.io")
