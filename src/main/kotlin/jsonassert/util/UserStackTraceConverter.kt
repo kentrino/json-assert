@@ -1,4 +1,4 @@
-package dev.kentrino.jsonassert.util
+package jsonassert.util
 
 
 internal object UserStackTraceConverter {

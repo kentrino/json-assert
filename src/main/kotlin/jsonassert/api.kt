@@ -1,4 +1,4 @@
-package dev.kentrino.jsonassert
+package jsonassert
 
 import dev.kentrino.jsonassert.util.Failures
 import java.lang.IllegalArgumentException

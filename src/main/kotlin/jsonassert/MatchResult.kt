@@ -1,4 +1,4 @@
-package dev.kentrino.jsonassert
+package jsonassert
 
 internal class MatchResult<T>(
     val position: JsonPosition,

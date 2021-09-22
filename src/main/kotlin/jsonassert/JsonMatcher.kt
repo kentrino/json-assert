@@ -1,4 +1,4 @@
-package dev.kentrino.jsonassert
+package jsonassert
 
 import java.lang.NullPointerException
 import io.github.portfoligno.json.ast.Json

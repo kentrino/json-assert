@@ -1,4 +1,4 @@
-package dev.kentrino.jsonassert
+package jsonassert
 
 
 import com.fasterxml.jackson.databind.ObjectMapper

@@ -1,4 +1,4 @@
-package dev.kentrino.jsonassert
+package jsonassert
 
 
 data class JsonPosition(private val keyChain: MutableList<JsonKey>) {

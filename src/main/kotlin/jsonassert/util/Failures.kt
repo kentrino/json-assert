@@ -1,4 +1,4 @@
-package dev.kentrino.jsonassert.util
+package jsonassert.util
 
 
 // kotest-assertions/src/jvmMain/kotlin/io/kotest/assertions/Failures.kt
