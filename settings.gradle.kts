@@ -8,4 +8,3 @@
  */
 
 rootProject.name = "dev.kentrino.jsonassert"
-include("lib")
