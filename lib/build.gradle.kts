@@ -7,14 +7,12 @@
  */
 
 plugins {
+    maven
     kotlin("jvm") version "1.5.31" apply false
-
-    // Apply the java-library plugin for API and implementation separation.
     `java-library`
 }
 
 repositories {
-    // Use JCenter for resolving dependencies.
     jcenter()
     maven("https://jitpack.io")
 }
